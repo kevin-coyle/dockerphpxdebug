@@ -1,0 +1,8 @@
+php:
+  build: .
+  volumes:
+    - ./app:/var/www/html
+    - ./xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+  ports:
+    - "8089:80"
+    - "9000:9000"
